@@ -1,0 +1,34 @@
+{
+  "name": "adl58-react",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node copy-worker.mjs",
+    "check": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node phase4-check.mjs && node phase5-check.mjs && node phase6-check.mjs && node phase7-check.mjs && node balance-check.mjs && node live-integration-check.mjs && node ui-preferences-check.mjs && node debt-flow-check.mjs && node vercel-gateway-check.mjs && node auth-loading-check.mjs"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^7.3.4",
+    "@mui/material": "^7.3.4",
+    "@tailwindcss/vite": "^4.1.14",
+    "axios": "^1.12.2",
+    "i18next": "^25.6.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-i18next": "^16.0.0",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.14",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  }
+}
